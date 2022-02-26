@@ -1,7 +1,5 @@
 import { defineComponent, h, ref } from "vue"
-import { default as htm } from "htm"
-
-const html = htm.bind(h)
+import {html} from 'vue-sys'
 
 const Counter = defineComponent({
   props: ["count"],

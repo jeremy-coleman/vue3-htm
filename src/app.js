@@ -1,6 +1,9 @@
 import { createApp, ref, defineComponent, h } from "vue"
-import { default as htm } from "htm"
-const html = htm.bind(h)
+
+//import { default as htm } from "htm"
+//const html = htm.bind(h)
+
+import {html} from 'vue-sys'
 
 import Counter from "./components/Counter.js"
 

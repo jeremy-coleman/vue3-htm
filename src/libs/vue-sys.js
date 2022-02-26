@@ -1,7 +1,7 @@
 import { default as htm } from "htm"
 import { h } from "vue"
 
-export * from "./vue@3.2.31"
+export * from "vue"
 
 const html = htm.bind(h)
 
