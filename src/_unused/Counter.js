@@ -1,5 +1,5 @@
-import { defineComponent, ref } from "vue"
-import { html } from "vue-sys"
+import { defineComponent, h, ref } from "vue"
+import {html} from 'vue-sys'
 
 const Counter = defineComponent({
   props: ["count"],
@@ -21,8 +21,9 @@ const Counter = defineComponent({
   render() {
     return html`<p>${this.count}</p>
       <label style="display: block;">${this.message}</label>
-      <input value="${this.text}" onKeydown=${this.test} placeholder="edit me" />
-      <p>${this.text}</p>`
+      <input value="${this.text}" onKeyup=${this.test} placeholder="edit me" />
+      <p>${this.text}</p>
+      `
   }
 })
 

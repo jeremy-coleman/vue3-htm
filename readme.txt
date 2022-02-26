@@ -13,4 +13,6 @@ if you need another version, replace the version in the redirect path to the one
 https://reactjs.org/docs/web-components.html
 https://custom-elements-everywhere.com/
 
-idk what this is
+
+custom element hackery
+you can also do this, but then the custom element wont accept props, which means we cant pass them through vue

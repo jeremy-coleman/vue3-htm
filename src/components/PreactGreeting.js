@@ -8,8 +8,6 @@ const HelloMessage = ({ name = "World!" }) => Preact.createElement("p", null, `H
 //the third arg is props. it can also be automatically infered from propTypes.
 //there is a vscode extension for flow or javascript (no typescript) that has really good automatic propType generation
 
-//not sure all that machinery in preact-custom-element is neccessary, considering how little code i had to use to get react working
-
 register(HelloMessage, 'preact-element', ['name']);
 
 export default defineComponent({

@@ -1,7 +1,7 @@
 import { defineComponent } from "vue"
 import { html } from "vue-sys"
 
-class BasicCustomElement extends HTMLElement {
+class HelloMessageElement extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <style>
@@ -19,7 +19,7 @@ class BasicCustomElement extends HTMLElement {
   }
 }
 
-window.customElements.define("hello-message", BasicCustomElement)
+window.customElements.define("hello-message", HelloMessageElement)
 
 export default defineComponent({
   render() {
