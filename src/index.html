@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #app {
+        margin: 0 auto;
+        border: 1px dashed gray;
+        padding: 15px;
+        max-width: 320px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- you can use multiple sources  -->
+    <script type="importmap">
+      {
+        "imports": {
+          "htm": "./libs/htm@3.1.0.js",
+          "vue": "./libs/vue@3.2.31.js",
+          "vue-sys": "./libs/vue@3.2.31.js"
+        }
+      }
+    </script>
+    <div id="app"></div>
+  </body>
+  <script type="module" src="app.js"></script>
+</html>

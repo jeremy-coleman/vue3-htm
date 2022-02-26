@@ -1,0 +1,12 @@
+{
+  "name": "vue3-htm",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "servor src"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "servor": "4.0.2"
+  }
+}
