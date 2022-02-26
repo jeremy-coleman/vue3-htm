@@ -1,5 +1,5 @@
 import { defineComponent, h, ref } from "vue"
-import {html} from 'vue-sys'
+import { html } from "vue-sys"
 
 const Counter = defineComponent({
   props: ["count"],

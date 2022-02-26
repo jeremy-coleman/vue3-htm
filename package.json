@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "servor src"
+    "start": "servor src --reload"
   },
   "license": "MIT",
   "dependencies": {},
