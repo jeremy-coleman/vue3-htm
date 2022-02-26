@@ -8,6 +8,8 @@
     "start": "servor src --reload"
   },
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "xdevDependencies": {
+    "gulp":"4.0.2",
+    "gulp-concat":"2.6.1"
+  }
 }

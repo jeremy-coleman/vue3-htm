@@ -7,5 +7,10 @@ if (HTMLScriptElement.supports && HTMLScriptElement.supports('importmap')) {
   console.log('Your browser supports import maps.');
 }
 
-you could replace the local vue with unpkg or ../node_modules/path/to/vue in the import map section inside src/index.html
-https://unpkg.com/vue@3.2.31/dist/vue.runtime.esm-browser.prod.js
+if you want to find a url for unpkg, just go to https://unpkg.com/module_to_search_for and it will redirect you to the latest module
+if you need another version, replace the version in the redirect path to the one you want to use.
+
+https://reactjs.org/docs/web-components.html
+https://custom-elements-everywhere.com/
+
+idk what this is

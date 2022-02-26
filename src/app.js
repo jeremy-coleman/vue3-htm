@@ -1,9 +1,10 @@
-import { createApp, ref, defineComponent, h } from "vue"
+import { createApp, defineComponent, ref } from "vue"
 import { html } from "vue-sys"
-
 import Counter from "./components/Counter.js"
+import Greeting from "./components/Greeting.js"
+import PreactGreeting from "./components/PreactGreeting.js"
 
-const Child = defineComponent({
+const App = defineComponent({
   setup() {
     const count = ref(0)
     const increase = () => {
@@ -15,13 +16,19 @@ const Child = defineComponent({
     }
   },
   components: {
-    Counter
+    Counter,
+    Greeting,
+    PreactGreeting
   },
   render() {
-    return html` <p>${this.count}</p>
+    return html`
+      <p>${this.count}</p>
       <${Counter} count=${this.count} />
-      <button onClick=${this.increase}>increase</button>`
+      <button onClick=${this.increase}>increase</button>
+      <${Greeting} />
+      <${PreactGreeting} />
+    `
   }
 })
 
-createApp(Child).mount("#app")
+createApp(App).mount("#app")

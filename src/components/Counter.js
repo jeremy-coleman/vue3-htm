@@ -1,4 +1,4 @@
-import { defineComponent, h, ref } from "vue"
+import { defineComponent, ref } from "vue"
 import { html } from "vue-sys"
 
 const Counter = defineComponent({
